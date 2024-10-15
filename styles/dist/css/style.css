@@ -34,7 +34,7 @@ body {
   height: 60px;
   min-width: 55px;
   font-size: 1rem;
-  color: #222;
+  color: #333;
   border-radius: 5px;
   background: linear-gradient(145deg, #e6e6e6, #fff);
   color: #000;
@@ -48,7 +48,8 @@ body {
   transform: perspective(1px) translateZ(0);
   transition: transform 0.1s;
 }
-.keyboard .key:active {
+.keyboard .key:active,
+.keyboard .key.pressed {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.2);
   transform: translateY(3px);
 }

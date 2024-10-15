@@ -7,6 +7,26 @@ $white-accent_color: #e6e6e6;
 $black_color: #000;
 $text_color: #333;
 
+// individual color variables
+$red: #ff0000;
+$orange: #ff7f00;
+$yellow: #ffff00;
+$green: #00ff00;
+$blue: #0000ff;
+$indigo: #4b0082;
+$violet: #8b00ff;
+
+// rainbow colors
+$rgb-colors: (
+    $red,    // red
+    $orange, // orange
+    $yellow, // yellow
+    $green,  // green
+    $blue,   // blue
+    $indigo, // indigo
+    $violet  // violet
+);
+
 //general values
 $padding-outside: 20px;
 $key-gap: 5px;

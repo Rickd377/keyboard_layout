@@ -12,3 +12,13 @@
     place-content: center;
     gap: $key-gap;
 }
+
+@keyframes rgb-glow {
+    0% { box-shadow: 0 0 10px 5px rgba($red, 0.7); }
+    16% { box-shadow: 0 0 10px 5px rgba($orange, 0.7); }
+    33% { box-shadow: 0 0 10px 5px rgba($yellow, 0.7); }
+    50% { box-shadow: 0 0 10px 5px rgba($green, 0.7); }
+    66% { box-shadow: 0 0 10px 5px rgba($blue, 0.7); }
+    83% { box-shadow: 0 0 10px 5px rgba($indigo, 0.7); }
+    100% { box-shadow: 0 0 10px 5px rgba($violet, 0.7); }
+}

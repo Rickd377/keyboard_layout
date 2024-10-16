@@ -20,7 +20,6 @@
         border: 2px solid rgba($black_color, 0.1);
         transform: perspective(1px) translateZ(0);
         transition: transform 0.1s;
-        animation: rgb-glow 15s linear infinite;
     }
 
     .key:active,

@@ -1,16 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     user-select: none;
     -webkit-user-drag: none;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
-    background-color: $bg_color;
-    height: 100%;
-    width: 100%;
     min-height: 100vh;
     @include flex(center, center, row, 0);
+    background-color: $bg_color;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
 }

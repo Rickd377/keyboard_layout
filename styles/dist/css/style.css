@@ -1,46 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@keyframes rgb-glow {
-  0% {
-    box-shadow: 0 5px 10px rgba(255, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  16% {
-    box-shadow: 0 5px 10px rgba(255, 127, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  33% {
-    box-shadow: 0 5px 10px rgba(255, 255, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    box-shadow: 0 5px 10px rgba(0, 255, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  66% {
-    box-shadow: 0 5px 10px rgba(0, 0, 255, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  83% {
-    box-shadow: 0 5px 10px rgba(75, 0, 130, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 5px 10px rgba(139, 0, 255, 0.7), 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
+*, *::before, *::after {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   user-select: none;
   -webkit-user-drag: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  background-color: #3f3f3f;
-  height: 100%;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 0;
+  background-color: #3f3f3f;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
 }
 
 .keyboard {
@@ -69,7 +53,6 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.1);
   transform: perspective(1px) translateZ(0);
   transition: transform 0.1s;
-  animation: rgb-glow 15s ease infinite;
 }
 .keyboard .key:active,
 .keyboard .key.pressed {
